@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  background: rgb(17, 17, 17);
+  color: #fff;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background: rgb(34, 34, 34);
+}
+
+#participantList {
+  position: fixed;
+  right: 10px;
+  top: 60px;
+  padding: 10px;
+  border-radius: 6px;
+  background: rgb(34, 34, 34);
+}
+
+#canvas {
+  display: block;
+  background: #fff;
+}
+
+#cursorContainer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+.cursor {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.cursor span {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: white;
+  background: black;
+}
+
+#entryOverlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+}

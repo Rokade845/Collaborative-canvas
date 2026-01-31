@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shared Drawing Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="entryOverlay">
+  <input id="participantName" placeholder="Display name">
+  <input id="spaceName" placeholder="Space name">
+  <button id="enterSpaceBtn">Enter</button>
+</div>
+
+<nav class="controls">
+  <input type="color" id="strokeColor">
+  <select id="strokeTool">
+    <option value="brush">Pen</option>
+    <option value="eraser">Eraser</option>
+  </select>
+  <input type="range" id="strokeSize" min="1" max="30" value="5">
+  <button id="undoLastBtn">Undo</button>
+  <button id="redoLastBtn">Redo</button>
+  <button id="exportImageBtn">Export</button>
+</nav>
+
+<aside id="participantList"></aside>
+<canvas id="canvas"></canvas>
+<div id="cursorContainer"></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="canvas.js"></script>
+</body>
+</html>
